@@ -1,0 +1,30 @@
+/* Divs in test page */
+#testbox1, #testbox2, #testbox3, #testbox4 {
+    height: 100px;
+    padding-left: 5px;
+}
+
+#testbox1, #testbox2 {
+    box-sizing: content-box !important;
+}
+
+#testbox1 {
+    width: 600px;
+    background-color: black;
+    border: 2px solid white; /* så boxen syns */
+}
+
+#testbox2 {
+    width: 100%;
+    background-color: blue;
+}
+
+#testbox3 {
+    width: 50vw;
+    background-color: red;
+}
+
+#testbox4 {
+    width: 100%;
+    background-color: green;
+}
