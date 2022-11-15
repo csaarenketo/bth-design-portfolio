@@ -2,10 +2,10 @@
 Logo: assets/img/houseplant.png
 Tagline: Min portfolio
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
+    - title: Länk till sidans/mitt github-repo.
+      url: https://github.com/csaarenketo/bth-design-portfolio
       icon: github
-    - title: Link till min LinkedIn repo.
+    - title: änk till min LinkedIn-profil.
       url: https://www.linkedin.com/in/christian-saarenketo-06970214b
       icon: linkedin
 ---
