@@ -1,4 +1,5 @@
 @import '../../node_modules/normalize.css/normalize';
+@import 'variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Faustina&family=Oswald&display=swap');
 
@@ -8,7 +9,6 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 
-@import 'variables';
 @import 'blockquotes';
 @import 'code';
 
@@ -19,7 +19,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     padding: 0;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 1.5em;
 }
 
@@ -27,7 +28,8 @@ ol, ul {
     display: none !important;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background-color: $background-color;
 }
@@ -51,7 +53,8 @@ body {
     padding: 1em;
 }
 
-.header, .footer {
+.header,
+.footer {
     flex: 0 0 auto;
 }
 
@@ -61,19 +64,21 @@ body {
     border-bottom: 1px solid $border-color1;
 }
 
-.header, .site-header {
+.header,
+.site-header {
     display: flex;
     justify-content: space-evenly;
 }
 
 /* Title */
 
-.title, .logo {
-    padding: 3em 3em 3em 3em;
+.title,
+.logo {
+    padding: 3em;
 }
 
 .logo {
-    background: radial-gradient(#FFF, #002 75%);
+    background: radial-gradient(#fff, #002 75%);
 }
 
 .logo img {
@@ -82,9 +87,6 @@ body {
 }
 
 /* menu items in nav bar */
-.nav a {
-    text-decoration: none;
-}
 
 .inactive {
     border-bottom: 2px solid $border-menu;
@@ -92,34 +94,41 @@ body {
 
 .active {
     border: 2px solid $border-menu;
-    border-bottom: none;
+    border-bottom: hidden;
     text-decoration: none;
 }
 
 @media (max-width: 767px) {
-    .title, .logo {
-        padding: 1em 0 1em 0;
+    .title
+    .logo {
+        padding: 1em 0;
     }
-    .title, .main img {
+
+    .title,
+    .main img {
         min-width: 50%;
     }
+
     .logo {
         max-width: 30%;
     }
 }
 
-#nav li a {
-    color: inherit;
-}
+#nav {
+    li a {
+        color: inherit;
+    }
 
-#nav li:hover {
-    background-color: $menu-lnk;
-    color: $menu-lnk-bck;
-    font-weight: 800;
-}
+    li:hover {
+        background-color: $menu-lnk;
+        color: $menu-lnk-bck;
+        font-weight: 800;
+    }
 
-#nav a {
-    color: $menu-lnk;
+    a {
+        color: $menu-lnk;
+        text-decoration: none;
+    }
 }
 
 .title * {
@@ -139,7 +148,7 @@ body {
 }
 
 .footer a {
-    color: #CCC;
+    color: #ccc;
 }
 
 .footer .social {
@@ -158,7 +167,11 @@ body {
     color: $text-color-main;
 }
 
-p, td, th, li, dd {
+p,
+td,
+th,
+li,
+dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -168,7 +181,12 @@ p {
     margin-bottom: 0.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0.6em;
     font-family: 'Oswald', sans-serif;
 }

@@ -6464,7 +6464,8 @@ pre code {
   padding: 0;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 1.5em;
 }
 
@@ -6472,7 +6473,8 @@ ol, ul {
   display: none !important;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   background-color: #002;
 }
@@ -6495,7 +6497,8 @@ body {
   padding: 1em;
 }
 
-.header, .footer {
+.header,
+.footer {
   flex: 0 0 auto;
 }
 
@@ -6504,18 +6507,20 @@ body {
   border-bottom: 1px solid #444;
 }
 
-.header, .site-header {
+.header,
+.site-header {
   display: flex;
   justify-content: space-evenly;
 }
 
 /* Title */
-.title, .logo {
-  padding: 3em 3em 3em 3em;
+.title,
+.logo {
+  padding: 3em;
 }
 
 .logo {
-  background: radial-gradient(#FFF, #002 75%);
+  background: radial-gradient(#fff, #002 75%);
 }
 
 .logo img {
@@ -6524,25 +6529,22 @@ body {
 }
 
 /* menu items in nav bar */
-.nav a {
-  text-decoration: none;
-}
-
 .inactive {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #22c;
 }
 
 .active {
-  border: 2px solid blue;
-  border-bottom: none;
+  border: 2px solid #22c;
+  border-bottom: hidden;
   text-decoration: none;
 }
 
 @media (max-width: 767px) {
-  .title, .logo {
-    padding: 1em 0 1em 0;
+  .title .logo {
+    padding: 1em 0;
   }
-  .title, .main img {
+  .title,
+  .main img {
     min-width: 50%;
   }
   .logo {
@@ -6552,19 +6554,18 @@ body {
 #nav li a {
   color: inherit;
 }
-
 #nav li:hover {
-  background-color: #EEA;
+  background-color: #eea;
   color: #020;
   font-weight: 800;
 }
-
 #nav a {
-  color: #EEA;
+  color: #eea;
+  text-decoration: none;
 }
 
 .title * {
-  color: #BBF;
+  color: #bbf;
 }
 
 .title p {
@@ -6579,7 +6580,7 @@ body {
 }
 
 .footer a {
-  color: #CCC;
+  color: #ccc;
 }
 
 .footer .social {
@@ -6594,10 +6595,14 @@ body {
 body {
   font-family: "Faustina", serif;
   line-height: 1.5rem;
-  color: #FBB;
+  color: #fbb;
 }
 
-p, td, th, li, dd {
+p,
+td,
+th,
+li,
+dd {
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -6607,7 +6612,12 @@ p {
   margin-bottom: 0.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0.6em;
   font-family: "Oswald", sans-serif;
 }
