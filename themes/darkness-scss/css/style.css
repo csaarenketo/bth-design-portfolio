@@ -6459,6 +6459,43 @@ pre code {
   line-height: 1.4;
 }
 
+/* Typografy */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Faustina", serif;
+  line-height: 1.5rem;
+  color: #fbb;
+}
+
+p,
+td,
+th,
+li,
+dd {
+  font-size: 1em;
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.6em;
+  margin-top: 0.8em;
+  font-family: "Oswald", sans-serif;
+}
+
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -6488,13 +6525,13 @@ body {
 }
 
 .main {
-  width: 80%;
+  width: 66em;
   margin: 1em auto;
   flex: 1 0 auto;
 }
 
 .main img {
-  width: 15%;
+  width: 20%;
   float: right;
   padding: 1em;
 }
@@ -6555,6 +6592,8 @@ body {
 }
 #nav li a {
   color: inherit;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
 }
 #nav li:hover {
   background-color: #eea;
@@ -6591,37 +6630,6 @@ body {
 
 .footer .social a {
   text-decoration: none;
-}
-
-/* Typografy */
-body {
-  font-family: "Faustina", serif;
-  line-height: 1.5rem;
-  color: #fbb;
-}
-
-p,
-td,
-th,
-li,
-dd {
-  text-align: justify;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-p {
-  margin-bottom: 0.5em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0.6em;
-  font-family: "Oswald", sans-serif;
 }
 
 img {
