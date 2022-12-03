@@ -6701,48 +6701,50 @@ body {
   text-decoration: none;
 }
 
-#nav li a {
+.nav li a {
   color: inherit;
   font-family: "Oswald", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
 }
-#nav li:hover {
+.nav li:hover {
   background-color: #eea;
   color: #020;
   font-weight: 800;
 }
-#nav a {
+.nav a {
   color: #eea;
   text-decoration: none;
 }
 
 .title * {
-  font-size: 3.911rem;
-  font-size: 1.25rem;
   color: #bbf;
 }
+.title * h1 {
+  font-size: 3.911rem;
+}
 @media (max-width: 75em) {
-  .title * {
+  .title * h1 {
     font-size: 3.052rem;
   }
 }
 @media (max-width: 45em) {
-  .title * {
+  .title * h1 {
     font-size: 2.686rem;
   }
 }
+.title * p {
+  font-size: 1.25rem;
+  font-style: italic;
+}
 @media (max-width: 75em) {
-  .title * {
+  .title * p {
     font-size: 1.25rem;
   }
 }
 @media (max-width: 45em) {
-  .title * {
+  .title * p {
     font-size: 1.1rem;
   }
-}
-.title * p {
-  font-style: italic;
 }
 
 /* Footer */

@@ -113,11 +113,11 @@ body {
     text-decoration: none;
 }
 
-#nav {
+.nav {
     li a {
         color: inherit;
         font-family: 'Oswald', sans-serif;
-        font-size: 3em;
+        font-size: 2em;
         
     }
 
@@ -134,11 +134,14 @@ body {
 }
 
 .title * {
-    @include size(h1);
-    @include size(p);
     color: $title-color1;
 
+    h1 {
+        @include size(h1);
+    }
+
     p {
+        @include size(p);
         font-style: italic;
     }
 }
