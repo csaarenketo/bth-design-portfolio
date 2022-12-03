@@ -1,0 +1,21 @@
+@import 'mobile-menu';
+
+@media (max-width: 1024px) {
+    .title
+    .logo {
+        padding: 1em 0;
+    }
+
+    .title,
+    .main img {
+        min-width: 50%;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    .main {
+        width: 90%;
+    }
+}

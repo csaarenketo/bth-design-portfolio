@@ -6459,6 +6459,23 @@ pre code {
   line-height: 1.4;
 }
 
+/* 
+ * Modular scale
+ * http://www.modularscale.com/?1.25&em&1.33&web&text
+*/
+/* 
+ * Modular scale
+ * http://www.modularscale.com/?1.25&em&1.25&web&text
+*/
+/* 
+ * Modular scale
+ * http://www.modularscale.com/?1.1&em&1.25&web&text
+*/
+/* .title {
+    @include size(h1);
+}
+
+*/
 /* Typografy */
 html {
   font-size: 100%;
@@ -6475,7 +6492,7 @@ td,
 th,
 li,
 dd {
-  font-size: 1em;
+  /* font-size: 1em; */
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -6496,6 +6513,73 @@ h6 {
   font-family: "Oswald", sans-serif;
 }
 
+.slide {
+  overflow-y: hidden !important;
+  transition: height 0.5s ease-in !important;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+  list-style: none;
+}
+
+.nav ul li {
+  padding: 0 1em;
+}
+
+.nav a, .nav-toggle {
+  color: #333;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+  .nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+  .js .nav-toggle {
+    display: block;
+    float: right;
+    width: 2em;
+    margin: 0.6667em 0;
+    font-size: 1.5rem;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .title .logo {
+    padding: 1em 0;
+  }
+  .title,
+  .main img {
+    min-width: 50%;
+  }
+  .logo {
+    max-width: 30%;
+  }
+  .main {
+    width: 90%;
+  }
+}
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -6525,9 +6609,48 @@ body {
 }
 
 .main {
-  width: 66em;
-  margin: 1em auto;
+  width: 75%;
   flex: 1 0 auto;
+  margin: 1em auto;
+}
+.main h2 {
+  font-size: 2.941rem;
+}
+@media (max-width: 75em) {
+  .main h2 {
+    font-size: 2.441rem;
+  }
+}
+@media (max-width: 45em) {
+  .main h2 {
+    font-size: 2.148rem;
+  }
+}
+.main h3 {
+  font-size: 2.211rem;
+}
+@media (max-width: 75em) {
+  .main h3 {
+    font-size: 1.953em;
+  }
+}
+@media (max-width: 45em) {
+  .main h3 {
+    font-size: 1.719rem;
+  }
+}
+.main p {
+  font-size: 1.25rem;
+}
+@media (max-width: 75em) {
+  .main p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 45em) {
+  .main p {
+    font-size: 1.1rem;
+  }
 }
 
 .main img {
@@ -6578,22 +6701,10 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 767px) {
-  .title .logo {
-    padding: 1em 0;
-  }
-  .title,
-  .main img {
-    min-width: 50%;
-  }
-  .logo {
-    max-width: 30%;
-  }
-}
 #nav li a {
   color: inherit;
   font-family: "Oswald", sans-serif;
-  font-size: 2em;
+  font-size: 3em;
 }
 #nav li:hover {
   background-color: #eea;
@@ -6606,10 +6717,31 @@ body {
 }
 
 .title * {
+  font-size: 3.911rem;
+  font-size: 1.25rem;
   color: #bbf;
 }
-
-.title p {
+@media (max-width: 75em) {
+  .title * {
+    font-size: 3.052rem;
+  }
+}
+@media (max-width: 45em) {
+  .title * {
+    font-size: 2.686rem;
+  }
+}
+@media (max-width: 75em) {
+  .title * {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 45em) {
+  .title * {
+    font-size: 1.1rem;
+  }
+}
+.title * p {
   font-style: italic;
 }
 

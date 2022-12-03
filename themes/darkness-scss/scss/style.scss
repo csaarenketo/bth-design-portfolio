@@ -11,7 +11,9 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import 'blockquotes';
 @import 'code';
+@import 'font-size';
 @import 'typography';
+@import 'responsivity';
 
 * {
     box-sizing: border-box;
@@ -43,9 +45,21 @@ body {
 }
 
 .main {
-    width: 66em;
-    margin: 1em auto;
+    width: 75%;
     flex: 1 0 auto;
+    margin: 1em auto;
+
+    h2 {
+        @include size(h2);
+    }
+
+    h3 {
+        @include size(h3);
+    }
+
+    p {
+        @include size(p);
+    }
 }
 
 .main img {
@@ -99,27 +113,11 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 767px) {
-    .title
-    .logo {
-        padding: 1em 0;
-    }
-
-    .title,
-    .main img {
-        min-width: 50%;
-    }
-
-    .logo {
-        max-width: 30%;
-    }
-}
-
 #nav {
     li a {
         color: inherit;
         font-family: 'Oswald', sans-serif;
-        font-size: 2em;
+        font-size: 3em;
         
     }
 
@@ -136,11 +134,13 @@ body {
 }
 
 .title * {
+    @include size(h1);
+    @include size(p);
     color: $title-color1;
-}
 
-.title p {
-    font-style: italic;
+    p {
+        font-style: italic;
+    }
 }
 
 /* Footer */
