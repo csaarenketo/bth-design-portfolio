@@ -42,6 +42,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    line-height: $base-line-height;
 }
 
 .main {
@@ -51,14 +52,17 @@ body {
 
     h2 {
         @include size(h2);
+        margin-bottom: 1.9rem;
     }
 
     h3 {
         @include size(h3);
+        margin-bottom: 1.8rem;
     }
 
     p {
         @include size(p);
+        margin-bottom: 1.7rem;
     }
 }
 

@@ -308,6 +308,8 @@ template {
   display: none;
 }
 
+/* colors */
+/* sizes */
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6606,6 +6608,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  line-height: 1.35;
 }
 
 .main {
@@ -6615,6 +6618,7 @@ body {
 }
 .main h2 {
   font-size: 2.941rem;
+  margin-bottom: 1.9rem;
 }
 @media (max-width: 75em) {
   .main h2 {
@@ -6628,6 +6632,7 @@ body {
 }
 .main h3 {
   font-size: 2.211rem;
+  margin-bottom: 1.8rem;
 }
 @media (max-width: 75em) {
   .main h3 {
@@ -6641,6 +6646,7 @@ body {
 }
 .main p {
   font-size: 1.25rem;
+  margin-bottom: 1.7rem;
 }
 @media (max-width: 75em) {
   .main p {
