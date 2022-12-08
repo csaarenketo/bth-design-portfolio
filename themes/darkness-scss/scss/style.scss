@@ -1,5 +1,4 @@
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Faustina&family=Oswald&display=swap');
 
@@ -97,7 +96,7 @@ body {
 }
 
 .logo {
-    background: radial-gradient(#fff, #002 75%);
+    background: radial-gradient(#fff, $background-color 75%);
 }
 
 .logo img {

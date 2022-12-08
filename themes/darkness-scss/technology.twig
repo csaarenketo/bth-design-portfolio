@@ -1,0 +1,24 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main duoColFlex" role="main">
+        <aside class="techMenu">
+            <h4>Teknologier</h4>
+            <ul>
+                {% for page in pages("technology") %}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+        <div class="techMain">
+            {{ content }}
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
