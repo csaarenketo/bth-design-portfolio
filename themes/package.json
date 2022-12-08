@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass darkness-scss/scss/style.scss darkness-scss/css/style.css --no-source-map",
-    "style-min": "sass darkness-scss/scss/style.scss darkness-scss/css/style.min.css --no-source-map --style compressed"
+    "styledark": "sass darkness-scss/scss/style-dark.scss darkness-scss/css/style-dark.css --no-source-map",
+    "stylelight": "sass darkness-scss/scss/style-light.scss darkness-scss/css/style-light.css --no-source-map",
+    "styledark-min": "sass darkness-scss/scss/style-dark.scss darkness-scss/css/style-dark.min.css --no-source-map --style compressed",
+    "stylelight-min": "sass darkness-scss/scss/style-light.scss darkness-scss/css/style-light.min.css --no-source-map --style compressed"
 },
   "keywords": [],
   "author": "",
