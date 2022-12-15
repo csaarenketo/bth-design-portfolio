@@ -5,7 +5,7 @@ Description: Information om tekniker använda på sidan
 ---
 
 ## Om sidan
-*(senast ändrad 2022-12-02)*
+*(senast ändrad 2022-12-15)*
 
 Här beskriver jag lite om vilka tekniker/principer som jag använder på sidan.
 
@@ -22,8 +22,15 @@ Har försökt använda några inbyggda delar i "språket" för att underlätta k
 - Använder variabler för färger och vissa text/fontrelaterade egenskaper.
 - Använder nästlade selectors för att minska mängden kod där det har varit uppenbart lämpligt.
 - Har hittat funktioner på nätet som ska underlätta vid ändring av storlek på skärm, tror de fungerar, men behöver experimentera lite mer.
+- Har skapat ett preliminärt ljust tema, just nu endast inverterade färger.
 
 ###Responsivitet
 Sidan har gjorts grundläggande responsiv, med två nivåer av storlekar:
 - Vid 1024 pixlar eller mindre ändras bredden på main-delen (huvudtexten) så den tar upp lite mer yta.
 - Vid 767 pixlar eller mindre ändras meny och header enligt den mall som medföljde temat "example".
+
+###PHP/Twig
+
+Har gjort en del ändringar och tillägg:
+- Sessioner: Har aktiverat sessions i PHP för att hålla reda på bl.a. aktuellt tema.
+- Skapat ett par Twig-filer (kopierat befintlig stdmall och gjort små ändringar), en för att visa länkar till teknologier i rutnät, och en där teknologitexten syns till höger med en Twig-genererad meny till vänster.
