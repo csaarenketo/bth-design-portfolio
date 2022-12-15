@@ -1,0 +1,71 @@
+// Varje teknologisida har dessa två kolumner, med först omslutande klass
+.duo-col-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .tech-menu {
+        width: 10em;
+    }
+
+    .tech-menu a {
+        padding: 0.5em;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.75em;
+        text-decoration: none;
+        color: $menu-lnk;
+    }
+
+    .tech-menu li {
+        list-style-type: none;
+    }
+
+    .tech-main {
+        width: 75%;
+    }    
+}
+
+// Landningssidan för teknologierna har tre-kolumners grid-layout
+// först omslutande container
+.tri-col-grid {
+    margin: 0% auto;
+    display: grid;
+    gap: 1.2em 1.2em;
+
+    h2 {
+        grid-column: span 3;
+        justify-self: center;
+    }
+
+    .tech-gb {
+        justify-self: center;
+        width: 15em;
+        text-align: center;
+    }
+
+    a {
+        display: block;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2em;
+        padding: 1em;
+        color: $menu-lnk;
+        border: 2px double $border-menu;
+    }
+
+    a:hover {
+        color: $background-color;
+        background: $menu-lnk;
+        font-weight: 800;
+    }
+
+}
+
+.active-t {
+    border: 2px solid $border-menu;
+    border-left: hidden;
+}
+
+.inactive-t {
+    border-left: 2px solid $border-menu;
+    color: $menu-lnk;
+}

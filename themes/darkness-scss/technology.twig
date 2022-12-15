@@ -3,17 +3,19 @@
 <body>
     {% include 'incl/nav.twig' %}
 
-    <div class="main duoColFlex" role="main">
-        <aside class="techMenu">
+    <div class="main duo-col-flex" role="main">
+        <aside class="tech-menu">
             <h4>Teknologier</h4>
             <ul>
                 {% for page in pages("technology") %}
-                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                    <li{% if page.id==current_page.id %} class="active-t" <li{% elseif page.id!=current_page.id %} class="inactive-t" {% endif %}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
                 {% endfor %}
             </ul>
         </aside>
 
-        <div class="techMain">
+        <div class="tech-main">
             {{ content }}
         </div>
     </div>

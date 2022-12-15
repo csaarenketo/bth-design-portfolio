@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
+	"style": "npm run stylelight && npm run styledark",
     "styledark": "sass darkness-scss/scss/style-dark.scss darkness-scss/css/style-dark.css --no-source-map",
     "stylelight": "sass darkness-scss/scss/style-light.scss darkness-scss/css/style-light.css --no-source-map",
     "styledark-min": "sass darkness-scss/scss/style-dark.scss darkness-scss/css/style-dark.min.css --no-source-map --style compressed",

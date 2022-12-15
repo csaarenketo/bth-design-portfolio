@@ -1,3 +1,4 @@
+/* Gemensamt för samtliga teman, importeras av resp. huvudfil */
 @import '../../node_modules/normalize.css/normalize';
 
 @import url('https://fonts.googleapis.com/css2?family=Faustina&family=Oswald&display=swap');
@@ -13,6 +14,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'font-size';
 @import 'typography';
 @import 'responsivity';
+@import 'techpages';
 
 * {
     box-sizing: border-box;
