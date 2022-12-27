@@ -5,7 +5,7 @@
 
     <div class="main duo-col-flex" role="main">
         <aside class="tech-menu">
-            <h4>Teknologier</h4>
+            <h2>Teknologier</h2>
             <ul>
                 {% for page in pages("technology") %}
                     <li{% if page.id==current_page.id %} class="active-t" <li{% elseif page.id!=current_page.id %} class="inactive-t" {% endif %}>

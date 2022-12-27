@@ -1,17 +1,18 @@
 /* colors */
-$font-color: #fbb;
-$font-alternative-color: #bbf;
-$accent-color: #999;
-$background-color: #002;
-$background-alternative-color: #002;
-$border-color1: #444;
-$text-color-main: #fbb;
-$border-menu: #22c;
-$menu-lnk: #eea;
-$menu-lnk-bck: #020;
-$title-color1: #bbf;
+$font-color: hsl(120, 100%, 80%);
+$font-alternative-color: hsl(90, 100%, 80%);
+$accent-color: hsl(105, 50%, 50%);
+$background-color: hsl(120, 5%, 5%);
+$background-alternative-color: hsl(90, 5%, 5%);
+$border-color1: hsl(135, 30%, 50%);
+$text-color-main: hsl(120, 100%, 85%);
+$border-menu: hsl(90, 50%, 50%);
+$menu-lnk: hsl(150, 100%, 75%);
+$menu-lnk-bck: hsl(90, 5%, 5%);
+$title-color1: hsl(90, 80%, 80%);
 $code-back: #333;
 $code-text: #fef;
+$img-filter-center: hsl(120, 100%, 80%);
 
 /* sizes */
 $base-line-height: 1.35;

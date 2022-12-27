@@ -8,12 +8,24 @@
         width: 10em;
     }
 
+    .tech-menu h2 {
+        text-align: center;
+    }
+
     .tech-menu a {
+        display: block;
         padding: 0.5em;
         font-family: 'Oswald', sans-serif;
         font-size: 1.75em;
         text-decoration: none;
         color: $menu-lnk;
+        background: inherit;
+    }
+
+    .tech-menu a:hover {
+        color: $background-color;
+        background: $menu-lnk;
+        font-weight: 800;
     }
 
     .tech-menu li {
@@ -28,18 +40,18 @@
 // Landningssidan för teknologierna har tre-kolumners grid-layout
 // först omslutande container
 .tri-col-grid {
+    width: 60%;
     margin: 0% auto;
     display: grid;
-    gap: 1.2em 1.2em;
+    gap: 1.2em;
 
     h2 {
-        grid-column: span 3;
         justify-self: center;
     }
 
     .tech-gb {
         justify-self: center;
-        width: 15em;
+        width: 1fr;
         text-align: center;
     }
 

@@ -98,7 +98,7 @@ body {
 }
 
 .logo {
-    background: radial-gradient(#fff, $background-color 75%);
+    background: radial-gradient($img-filter-center, $background-color 75%);
 }
 
 .logo img {
@@ -160,7 +160,7 @@ body {
 }
 
 .footer a {
-    color: #ccc;
+    color: #999;
 }
 
 .footer .social {

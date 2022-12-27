@@ -1,5 +1,15 @@
 @import 'mobile-menu';
 
+@media (min-width: 769px) {
+    .tri-col-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tri-col-grid h2 {
+        grid-column: span 2;
+    }
+}
+
 @media (max-width: 1024px) {
     .title
     .logo {
@@ -17,5 +27,15 @@
 
     .main {
         width: 90%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .tri-col-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tri-col-grid h2 {
+        grid-column: span 3;        
     }
 }
