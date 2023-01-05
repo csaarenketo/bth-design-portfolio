@@ -1,11 +1,15 @@
 @import 'mobile-menu';
 
 @media (min-width: 769px) {
-    .tri-col-grid {
+    .tri-col-grid,
+    .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .tri-col-grid h2 {
+    .tri-col-grid
+    h2,
+    .gallery-grid
+    h2 {
         grid-column: span 2;
     }
 }
@@ -13,16 +17,12 @@
 @media (max-width: 1024px) {
     .title
     .logo {
-        padding: 1em 0;
+        padding: 0.2em;
     }
 
     .title,
     .main img {
         min-width: 50%;
-    }
-
-    .logo {
-        max-width: 30%;
     }
 
     .main {
@@ -31,11 +31,22 @@
 }
 
 @media (min-width: 1025px) {
-    .tri-col-grid {
+    .tri-col-grid,
+    .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .tri-col-grid h2 {
+    .tri-col-grid
+    h2,
+    .gallery-grid
+    h2 {
         grid-column: span 3;        
     }
+}
+
+@media (max-width: 767px) {
+    .tech-menu {
+        display: none;
+    }
+
 }
