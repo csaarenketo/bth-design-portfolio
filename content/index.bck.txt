@@ -4,7 +4,7 @@ Description: Detta är jag
 ---
 ##Detta är jag!
 <p>Jag heter Christian Saarenketo, en person i 40-årsåldern som alltid tyckt att, som det heter, "det här med data" är intressant och kul.</p>
-![Bild på mitt, Christian Saarenketos, ansikte, tagen snett framifrån vänster](image/jag-ansikte.jpg)
+![Bild på mitt, Christian Saarenketos, ansikte, tagen snett framifrån vänster](%assets_url%/img/jag-ansikte.jpg)
 <p>Har haft små drömmar om att bli en OK programmerare, och mest sett programmering för webben som ett mer nödvändigt ont, trots att jag själv haft nytta av internet, men det har ändå inte känts som "riktig" programmering.</p>
 
 <p>Men, webben är numera så integrerad med allt man gör så jag har på senare år tänkt att det är lika bra att lära sig, plus att jag upptäckt att det ändå är ganska kul att sätta ihop hemsidor (de få ggr jag nu gjort det).</p>
