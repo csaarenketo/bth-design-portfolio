@@ -16,6 +16,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'responsivity';
 @import 'techpages';
 @import 'gallery';
+@import 'palettes';
 
 * {
     box-sizing: border-box;
@@ -49,6 +50,7 @@ body {
 
 .main {
     width: 75%;
+    max-width: 2500px;
     flex: 1 0 auto;
     margin: 1em auto;
 

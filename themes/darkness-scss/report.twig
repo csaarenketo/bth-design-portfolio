@@ -1,0 +1,26 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main duo-col-flex" role="main">
+        <aside class="tech-menu">
+            <h2>Rapporter</h2>
+            <ul>
+                {% for page in pages("analysis") %}
+                    <li{% if page.id==current_page.id %} class="active-t" <li{% elseif page.id!=current_page.id %} class="inactive-t" {% endif %}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+        <div class="tech-main">
+            {{ content }}
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

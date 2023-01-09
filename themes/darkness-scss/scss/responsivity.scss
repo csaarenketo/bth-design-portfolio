@@ -28,6 +28,11 @@
     .main {
         width: 90%;
     }
+
+    .duo-col-flex {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -44,9 +49,12 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .tech-menu {
         display: none;
     }
-
+    
+    .tech-main {
+        padding-left: 0;
+    }
 }

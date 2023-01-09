@@ -6429,13 +6429,13 @@ blockquote {
   font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
-  border-left: 0.5em solid #f5f5f5;
+  border-left: 0.5em solid #262;
 }
 
 code {
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-radius: 0.3em;
   background: #ccc;
   font-family: monospace;
@@ -6447,7 +6447,7 @@ code {
 
 pre {
   padding: 0 1em;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-radius: 0.3em;
   background: #ccc;
 }
@@ -6540,7 +6540,7 @@ h6 {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header {
     flex-direction: column;
   }
@@ -6589,6 +6589,10 @@ h6 {
   .main {
     width: 90%;
   }
+  .duo-col-flex {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 @media (min-width: 1025px) {
   .tri-col-grid,
@@ -6600,9 +6604,12 @@ h6 {
     grid-column: span 3;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .tech-menu {
     display: none;
+  }
+  .tech-main {
+    padding-left: 0;
   }
 }
 .duo-col-flex {
@@ -6635,6 +6642,7 @@ h6 {
 }
 .duo-col-flex .tech-main {
   width: 75%;
+  padding-left: 1em;
 }
 
 .tri-col-grid {
@@ -6693,6 +6701,89 @@ h6 {
   width: 100%;
 }
 
+.colortable {
+  width: 80%;
+  margin: 0% auto;
+}
+.colortable tr {
+  height: 50px;
+}
+.colortable .co1 .site1 {
+  background-color: #fff;
+}
+.colortable .co2 .site1 {
+  background-color: #088;
+}
+.colortable .co3 .site1 {
+  background-color: #fff;
+}
+.colortable .co4 .site1 {
+  background-color: #0a0;
+}
+.colortable .co5 .site1 {
+  background-color: #fff;
+}
+.colortable .co1 .site2 {
+  background-color: #080;
+}
+.colortable .co2 .site2 {
+  background-color: #fff;
+}
+.colortable .co3 .site2 {
+  background-color: #880;
+}
+.colortable .co4 .site2 {
+  background-color: #fff;
+}
+.colortable .co5 .site2 {
+  background-color: #58b;
+}
+.colortable .co1 .site3 {
+  background-color: #fff;
+}
+.colortable .co2 .site3 {
+  background-color: #800;
+}
+.colortable .co3 .site3 {
+  background-color: #fff;
+}
+.colortable .co4 .site3 {
+  background-color: #faa;
+}
+.colortable .co5 .site3 {
+  background-color: #fff;
+}
+.colortable .co1 .site4 {
+  background-color: #0a0;
+}
+.colortable .co2 .site4 {
+  background-color: #fff;
+}
+.colortable .co3 .site4 {
+  background-color: #f0f;
+}
+.colortable .co4 .site4 {
+  background-color: #fff;
+}
+.colortable .co5 .site4 {
+  background-color: #00f;
+}
+.colortable .co1 .site5 {
+  background-color: #fff;
+}
+.colortable .co2 .site5 {
+  background-color: #0f0;
+}
+.colortable .co3 .site5 {
+  background-color: #fff;
+}
+.colortable .co4 .site5 {
+  background-color: #f00;
+}
+.colortable .co5 .site5 {
+  background-color: #fff;
+}
+
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -6724,6 +6815,7 @@ body {
 
 .main {
   width: 75%;
+  max-width: 2500px;
   flex: 1 0 auto;
   margin: 1em auto;
 }
